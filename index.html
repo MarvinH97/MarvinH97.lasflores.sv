@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Playa Paraíso</title>
+  <title>Playa Las Flores</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="fontawesome/fontawesome-free-7.0.0-web/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
   <style>
     body {
       background-color: #f0f8ff;
@@ -12,7 +16,7 @@
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      background: url('./pictures/portada.jpg') no-repeat center center/cover;
       height: 90vh;
       color: white;
       display: flex;
@@ -22,10 +26,42 @@
     }
 
     header h1 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 200;
       font-size: 3.5rem;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 1rem 2rem;
       border-radius: 10px;
+    }
+
+    ol {
+        list-style: none;
+        position: absolute;
+        top: 0;
+        margin-top: 25px;
+    }
+
+    ol li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    ol li i {
+        font-size: 25px;
+    }
+
+    a.navbar-brand {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+
+    .text-primary {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+
+    .bg-primary {
+        background-color: #1f5b83 !important;
     }
 
     .gallery img {
@@ -46,12 +82,19 @@
 <body>
 
   <header>
-    <h1>Bienvenido a Playa Paraíso</h1>
+      <ol>
+          <li><a><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a><i class="fa-brands fa-twitter"></i></a></li>
+      </ol>
+    <h1>Bienvenido a Playa Las Flores</h1>
   </header>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Playa Paraíso</a>
+      <a class="navbar-brand" href="#">Playa Las Flores</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -73,9 +116,9 @@
 
   <section id="about" class="py-5">
     <div class="container text-center">
-      <h2 class="text-primary mb-4">Sobre Playa Paraíso</h2>
+      <h2 class="text-primary mb-4">Sobre Playa Las Flores</h2>
       <p>
-        Playa Paraíso es un destino mágico ubicado en la costa del Pacífico. Con arenas blancas, aguas cristalinas
+        Playa Las Flores es un destino mágico ubicado en la costa del Pacífico. Con arenas blancas, aguas cristalinas
         y un ambiente tropical, es el lugar ideal para relajarte y disfrutar del sol.
       </p>
     </div>
@@ -117,9 +160,9 @@
   <section id="contact" class="py-5">
     <div class="container text-center">
       <h2 class="text-primary mb-4">Contáctanos</h2>
-      <p>Email: <a href="mailto:info@playaparaiso.com">info@playaparaiso.com</a></p>
+      <p>Email: <a href="mailto:info@playaparaiso.com">info@playalasflores.com</a></p>
       <p>Teléfono: +503 1234 5678</p>
-      <p>Dirección: Carretera del Sol, Playa Paraíso, El Salvador</p>
+      <p>Dirección: Carretera del Sol, Playa Las Flores, El Salvador</p>
     </div>
   </section>
 
