@@ -34,19 +34,27 @@
       border-radius: 10px;
     }
 
-    ol {
+    ol.redes {
         list-style: none;
         position: absolute;
         top: 0;
         margin-top: 25px;
     }
 
-    ol li {
+    ol.redes li {
         display: inline-block;
         margin-left: 10px;
     }
 
-    ol li i {
+    ol.redes li a {
+      border-radius: 8px;
+      padding: 10px;
+      display: block;
+      background: #000;
+      color: #fff;
+    }
+
+    ol.redes li i {
         font-size: 25px;
     }
 
@@ -56,13 +64,17 @@
     }
 
     .text-primary {
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      color: #000 !important;
     }
 
     .bg-primary {
         background-color: #1f5b83 !important;
+    }
+
+    .bg-light {
+      background-color: rgb(248 249 250 / 72%) !important;
     }
 
     .gallery img {
@@ -73,7 +85,7 @@
     }
 
     footer {
-      background-color: #0077b6;
+      background-color: #1f5b83;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
@@ -82,17 +94,21 @@
     .section-sand {
         background: url("pictures/arena.jpg");
     }
+
+    section {
+      padding: 48px;
+    }
   </style>
 </head>
-<body>
+<body class="section-sand">
 
   <header>
-      <ol>
-          <li><a><i class="fa-brands fa-youtube"></i></a></li>
-          <li><a><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a><i class="fa-brands fa-tiktok"></i></a></li>
-          <li><a><i class="fa-brands fa-twitter"></i></a></li>
+      <ol class="redes">
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
       </ol>
     <h1>Bienvenido a Playa Las Flores</h1>
   </header>
@@ -119,57 +135,74 @@
     </div>
   </nav>
 
-  <section id="about" class="py-5">
-    <div class="container text-center">
-      <h2 class="text-primary mb-4">Sobre Playa Las Flores</h2>
-      <p>
-        Playa Las Flores es un destino mágico ubicado en la costa del Pacífico. Con arenas blancas, aguas cristalinas
-        y un ambiente tropical, es el lugar ideal para relajarte y disfrutar del sol.
-      </p>
-    </div>
-  </section>
+  <main class="container">
+    <section id="about" class="py-5 bg-light">
+      <div class="container ">
+        <h2 class="text-primary text-center mb-4">Sobre Playa Las Flores</h2>
+        <p>
+          Playa Las Flores está ubicada en el departamento de San Miguel. La pequeña y hermosa ensenada que recibe al viajero, marca el inicio de una serie de puntas rocosas, con olas de rompiente derecha, perfectas para la práctica del surf, que se extienden una tras otra por varios kilómetros, desde el oriente de la costa salvadoreña hacia el occidente.
+        </p>
+        <p>
+          Se conoce como “El Oriente Salvaje”, debido a su naturaleza, pero también remota. Actualmente, modernas carreteras y caminos llevan hasta Las Flores, cuyo encanto natural y calidad de olas se mantienen intactos.
+        </p>
+        <p>
+          Durante los meses de diciembre y enero, esta playa ofrece olas amables, propias para principiantes e intermedios; pero cuando arriban los oleajes del océano pacífico sur, especialmente entre marzo y octubre, debes prepararte; ya que esta punta produce olas de hasta 12 pies de altura (4 metros), con líneas largas y empinadas, que se mueven velozmente sobre un fondo semi rocoso, hasta fundirse con la arena gris volcánica de su orilla.
+        </p>
+      </div>
+    </section>
 
-  <section id="gallery" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center text-primary mb-4">Galería</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Playa 1" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Playa 2" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Playa 3" class="img-fluid">
+    <section id="gallery" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center text-primary mb-4">Galería</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="pictures/galery/flores-01.jpg" alt="Playa 1" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-md-4">
+            <img src="pictures/galery/flores-02.jpg" alt="Playa 2" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-md-4">
+            <img src="pictures/galery/flores-03.jpg" alt="Playa 3" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-md-4">
+            <img src="pictures/galery/flores-04.jpg" alt="Playa 1" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-md-4">
+            <img src="pictures/galery/Playa-El-Cuco-San-Miguel-2.jpg" alt="Playa 2" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-md-4">
+            <img src="pictures/galery/flores-04.jpg" alt="Playa 3" class="img-fluid img-thumbnail">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-   <section id="ubicacion" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center text-primary mb-4">Ubicación</h2>
-      <div class="ratio ratio-16x9">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351052.38072550466!2d-90.13096311159578!3d13.55904125375994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62b2c5f72d15b3%3A0x411d2bcf69793323!2sPlaya%20Las%20Flores!5e0!3m2!1ses-419!2ssv!4v1754599871703!5m2!1ses-419!2ssv" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="ubicacion" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center text-primary mb-4">Ubicación</h2>
+        <div class="ratio ratio-16x9">
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351052.38072550466!2d-90.13096311159578!3d13.55904125375994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62b2c5f72d15b3%3A0x411d2bcf69793323!2sPlaya%20Las%20Flores!5e0!3m2!1ses-419!2ssv!4v1754599871703!5m2!1ses-419!2ssv" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="py-5">
-    <div class="container text-center">
-      <h2 class="text-primary mb-4">Contáctanos</h2>
-      <p>Email: <a href="mailto:info@playaparaiso.com">info@playalasflores.com</a></p>
-      <p>Teléfono: +503 1234 5678</p>
-      <p>Dirección: Carretera del Sol, Playa Las Flores, El Salvador</p>
-    </div>
-  </section>
+    <section id="contact" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="text-primary mb-4">Contáctanos</h2>
+        <p>Email: <a href="mailto:info@playaparaiso.com">info@playalasflores.com</a></p>
+        <p>Teléfono: +503 1234 5678</p>
+        <p>Dirección: Carretera del Sol, Playa Las Flores, El Salvador</p>
+      </div>
+    </section>
+  </main>
+  
 
   <footer>
     <p>&copy; 2025 Playa Paraíso. Todos los derechos reservados.</p>
